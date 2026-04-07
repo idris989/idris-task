@@ -6,19 +6,19 @@
 ---
 
 ### 1. Layihə Haqqında Qısa Məlumat
-Mənim hazırladığım bu layihə "Skating Hub" adlanır və skeyterlərin öz profillərinə daxil olması üçün nəzərdə tutulmuş bir platformadır.
-Saytın əsas hissəsi Login (Giriş) səhifəsidir.
+"Skating Hub" layihəsi skeyterlər üçün nəzərdə tutulmuş müasir bir platformadır. Saytın əsas funksiyası istifadəçilərin təhlükəsiz şəkildə qeydiyyatdan keçməsi və öz profillərinə daxil olmasıdır. İstifadəçi interfeysi (UI) sadə və effektiv dizayn edilib ki, skeyterlər həm yeni hesab yarada, həm də mövcud məlumatları ilə sistemə giriş edə bilsinlər.
 İstifadə etdiyim texnologiyalar:
 * Görünüş (Frontend): HTML, CSS və JavaScript.
 * Server hissəsi: Node.js və Express freymvorku.
 * Məlumat bazası: İstifadəçi məlumatlarını saxlamaq üçün SQLite.
-  <img width="692" height="714" alt="Screenshot 2026-04-05 112043" src="https://github.com/user-attachments/assets/f7bf0fb7-8afe-4748-8938-cd4663e4d904" />
+<img width="706" height="801" alt="image" src="https://github.com/user-attachments/assets/770f2c2d-d119-4de7-b1b6-f4204eb9b626" />
+
+
 
 
 
 **Saytın işləmə prinsipi:**
-Saytda qeydiyyat hissəsi yoxdur, çünki istifadəçilər sistemə öncədən (admin tərəfindən) əlavə edilib.
-İstifadəçi sadəcə öz email və şifrəsini yazaraq daxil olmalıdır. Bütün yoxlanışlar server tərəfində, skating.db faylı vasitəsilə aparılır.
+aytda həm Login (Giriş), həm də Sign Up (Qeydiyyat) funksiyaları mövcuddur. Yeni istifadəçilər "Sign Up" düyməsi vasitəsilə öz email və şifrələrini daxil edərək skating.db verilənlər bazasına yazıla bilərlər. Mövcud istifadəçilər isə "Login" bölməsindən daxil olaraq sistem tərəfindən tanınırlar. Bütün yoxlanışlar və məlumatların saxlanılması prosesi Node.js serveri tərəfindən, SQLite verilənlər bazası vasitəsilə idarə olunur. Təhlükəsizlik məqsədilə SQL Injection hücumlarına qarşı xüsusi qorunma metodları (Parameterized Queries) tətbiq edilmişdir.
 <img width="501" height="155" alt="Screenshot 2026-04-05 112942" src="https://github.com/user-attachments/assets/358b172c-384a-4138-8c98-3df9146c27c4" />
 <img width="845" height="198" alt="Screenshot 2026-04-05 113106" src="https://github.com/user-attachments/assets/68a581b9-c7ad-4758-90e9-7b78d64410b1" />
 
